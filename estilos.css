@@ -202,6 +202,17 @@ nav .enlaces a:hover{
   margin-bottom: var(--espacios-contenido);
 }
 
+.contenedorsesion{
+
+}
+
+.teal
+{
+  padding:10px;
+  background:teal;
+  color:white;
+}
+
 .card{
   display: flex;
   justify-content: space-around;
@@ -415,3 +426,4 @@ footer p{
     margin: auto;
   }
 }
+
