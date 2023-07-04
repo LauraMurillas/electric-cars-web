@@ -10,18 +10,20 @@ $(function () {
         }
     });
 
-    let equipo = $('#equipo').offset().top,
+    let ingreso = $('#ingreso').offset().top,
         servicio = $('#servicio').offset().top,
         trabajo = $('#trabajo').offset().top,
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
-        let equipo = $('#equipo').offset().top,
-        servicio = $('#servicio').offset().top,
-        trabajo = $('#trabajo').offset().top,
+        let ingreso = $('#ingreso').offset().top,
+        servicio = $('#compra').offset().top,
+        trabajo = $('#repara').offset().top,
         contacto = $('#contacto').offset().top;
     });
 
+    //Estas funciones hacen que al undir los botones
+    //del menú, se dirija a las distintas secciones
     $('#enlace-inicio').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
@@ -29,10 +31,10 @@ $(function () {
         },600);
     });
 
-    $('#enlace-equipo').on('click', function(e){
+    $('#enlace-ingreso').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: equipo -100
+            scrollTop: ingreso -100
         },600);
     });
 
